@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Comfortaa', cursive;
+    background-image: url(./img/forest-under-clouds-1287075.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent-bg {
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 25px;
+    height: 95%;
+    width: 60%;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 1200px) {
+    .transparent-bg {
+        width: 80%;
+    }
+}
+
+@media (max-width: 769px) {
+    .transparent-bg {
+        width: 85%;
+    }
+}
+
+@media (max-width: 415px){
+    .transparent-bg{
+        width: 90%;
+    }
+}
+
+.app-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+@media (max-width: 415px) {
+    .info-1 {
+        font-size: 1.5rem;
+    }
+}
+
+.info-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-2 div {
+    min-width: 20rem;
+}
+
+.icon img {
+    width: 11rem;
+}
+
+.icon-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.description {
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+.temp {
+    font-size: 7rem;
+    text-align: center;
+}
+
+@media (max-width: 415px) {
+    .info-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon img {
+        width: 10rem;
+    }
+
+    .icon-description {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 3px;
+    }
+
+    .temp {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.info-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.max div {
+    margin: 1rem 0 1rem 0;
+}
+
+.info-3 div {
+    text-align: center;
+    width: 200px;
+}
+
+@media(max-width: 415px) {
+    .info-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+
+    .info-3 div {
+        text-align: center;
+        width: 110px;
+    }
+}
+
+
+.info-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.info-4 div {
+    width: 14rem;
+}
+
+.day {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.full-date {
+    display: flex;
+    text-align: center;
+}
+
+.full-date div {
+    width: 100%
+}
+
+.time {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.hour {
+    text-align: end;
+}
+
+.colon {
+    padding-bottom: 0.5rem;
+}
+
+.minutes {
+    text-align: start;
+}
+
+.num {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 769px) {
+    .info-4 div {
+        width: 14rem;
+    }
+
+    .day {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 415px) {
+    .info-4 div {
+        width: 9rem;
+    }
+
+    .day {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .full-date div {
+        width: 29%;
+    }
+
+    .time {
+        display: flex;
+        text-align: center;
+        height: 100%;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+
+    .num {
+        font-size: 1.3rem;
+    }
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+@media(max-width: 415px) {
+    footer p {
+        font-size: 0.6rem;
+        margin: 0 0.7rem 0 0.7rem;
+    }
+}
