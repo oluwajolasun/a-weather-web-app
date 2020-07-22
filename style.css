@@ -187,8 +187,8 @@ main {
     justify-content: center;
 }
 
-.info-4 div {
-    width: 14rem;
+.info-4 > div{
+    margin: 0 3rem;
 }
 
 .day {
@@ -199,12 +199,10 @@ main {
 
 .full-date {
     display: flex;
-    text-align: center;
+    justify-content: space-between;
+    margin: 0 4rem 0 4rem;
 }
 
-.full-date div {
-    width: 100%
-}
 
 .time {
     display: flex;
